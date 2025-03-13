@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="main">
+        <h1>Interest Calcutor</h1>
+        <p>
+            <label for="pa"> Principal Amount (&#8377;) : </label><br>
+            <input type="number" id="pa" autofocus required>
+        </p>
+        <p>
+            <label for="ri"> Rate of Interest (%) : </label><br>
+            <input type="number" id="ri" min="1" max="5" required>
+        </p>
+        <p>
+            <label for="tp"> Time (in years) : </label><br>
+            <input type="number" id="tp" min="1" max="10" required>
+        </p>
+        <p align="center">
+            <button type="button" onclick="siCalculate()" id="btn1">Simple Interest</button>
+            &nbsp; &nbsp;
+            <button type="button" onclick="ciCalculate()" id="btn2">Compound Interest</button>
+            &nbsp; &nbsp;
+            <button type="reset" onclick="clearFields()">Reset</button>
+        </p>
+        <p>
+            <output id="si">Simple Interest : </output>
+        </p>
+        <p>
+            <output id="tasi">Total Amount for SI : </output>
+        </p>
+        <p>
+            <output id="ci">Compound Interest : </output>
+        </p>
+        <p>
+            <output id="taci">Total Amount for CI : </output>
+        </p>
+    </div>
+</body>
+</html>
